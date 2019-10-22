@@ -25,7 +25,7 @@ SECRET_KEY = '#h-*)o%yr60f$w)bor(wv9g6!ua4s8rtxhyu_&6naf*d861n(y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["192.168.1.154"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +75,11 @@ WSGI_APPLICATION = 'my_project.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
+    #'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': os.path.join(BASE_DIR, 'db.mysql'),
+    #}
+
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_learning',

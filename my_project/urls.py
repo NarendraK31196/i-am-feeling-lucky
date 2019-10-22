@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """my_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,7 +17,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.urls import path, include
+
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    path('', include('blog.urls')),
 ]
