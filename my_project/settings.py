@@ -82,11 +82,9 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_learning',
-        'USER': 'root',
-        'PASSWORD': 'tas123',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME':'Narendra31196$django_project1',
+        'USER':'root',
+        'PASSWORD':'tas123',
     }
 }
 
@@ -115,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 

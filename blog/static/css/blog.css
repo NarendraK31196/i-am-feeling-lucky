@@ -1,0 +1,98 @@
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+      height: 630px;
+      background-image: url('/static/Images/background.jpg');
+    }
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+    .hightlight_name {
+     text-shadow: 0 1px 0 #ccc,
+		0 2px 0 #c9c9c9,
+		0 3px 0 #bbb,
+		0 4px 0 #b9b9b9,
+		0 5px 0 #aaa,
+		0 6px 1px rgba(0,0,0,.1),
+		0 0 5px rgba(0,0,0,.1),
+		0 1px 3px rgba(0,0,0,.3),
+		0 3px 5px rgba(0,0,0,.2),
+		0 5px 10px rgba(0,0,0,.25),
+		0 10px 10px rgba(0,0,0,.2),
+		0 20px 20px rgba(0,0,0,.15); 
+    
+    }
+    .user_name {
+     	color: rgb(0, 159, 213) !important;
+     	font-weight: 700;
+     	transition: color linear .1s;
+     	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style: normal;
+	font-size: 100%;
+	line-height: 1;
+	font-family: inherit;
+	text-decoration: none;
+	box-sizing: border-box;
+	list-style-type: none;
+        font-size: 15px;
+        float:left  
+    }
+    .comment{
+      	font-weight: 700;
+     	transition: color linear .1s;
+     	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style: normal;
+	font-family: inherit;
+	text-decoration: none;
+	box-sizing: border-box;
+        font-size: 15px;
+        float:left;
+        color:#84e3d9;  
+    }
+    .post_body {
+	overflow: hidden;
+        box-sizing: border-box;
+    }
+    .comment_header{
+	line-height: 1;
+	font-size: 13px;
+	box-sizing: border-box;
+	list-style-type: none;
+	margin-bottom: 3px;
+        height:50%;
+        float:left;
+    }
+    .comment_body{
+        box-sizing: border-box;
+        height:50%;
+        float:left; 
+    }	
